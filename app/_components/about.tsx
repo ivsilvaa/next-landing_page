@@ -38,7 +38,7 @@ export function About() {
                     </div>
 
                     <div className='space-y-6 mt-10'>
-                        <h2 className='text-4xl font-bold'>SOBRE</h2>
+                        <h2 className='text-4xl font-bold'>Sobre a empresa</h2>
                         <p className='text-justify'>A relação com os animais vai além do cuidado: ela traz equilíbrio,
                             afeto e propósito. Nosso compromisso é facilitar o acesso a produtos que
                             fazem bem para você e para quem está ao seu lado, com atendimento atencioso,
