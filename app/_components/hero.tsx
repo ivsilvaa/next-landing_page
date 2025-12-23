@@ -23,10 +23,12 @@ export function Hero() {
                         </div>
                     </div>
 
-
+                    <div className='hidden md:block h-full relative'>
+                        <Image src={dogImage} alt="Foto do cachorrinho feliz"
+                            className='object-contain' fill sizes='(max-width: 768px) 0vw, 50vw' />
+                    </div>
+                </article>
             </div>
-        </article>
-            </div >
-        </section >
+        </section>
     )
 }
