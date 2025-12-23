@@ -19,7 +19,7 @@ export function Hero() {
                             felicidade do seu amigo de quatro patas.</p>
 
                         <a href="#" className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center
-                            justify-center w-fit gap-2  hover:bg-green-600 hover:scale-105 duration-300">
+                            justify-center w-fit gap-2 hover:scale-105 duration-300">
                             <WhatsappLogo className="w-5 h-5" />
 
                             Contato via WhatsApp</a>

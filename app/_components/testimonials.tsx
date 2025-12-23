@@ -39,15 +39,10 @@ const services = [
     },
 ]
 
-export function Services() {
+export function Testimonials() {
 
     const [emblaRef, emblaApi] = useEmblaCarousel({
-        loop: false,
-        align: "start",
-        slidesToScroll: 1,
-        breakpoints: {
-            "(min-width: 768px)": { slidesToScroll: 3 }
-        }
+        loop: true,
     })
 
     function scrollPrev() {
@@ -59,10 +54,10 @@ export function Services() {
     }
 
     return (
-        <section className="bg-white py-16">
+        <section className="bg-[#fdf6ec] py-16">
             <div className="container mx-auto px-4">
 
-                <h2 className="text-4xl font-bold mb-12">Nossos serviços</h2>
+                <h2 className="text-4xl font-bold mb-12 text-center">O que dizem nossos clientes sobre nós</h2>
 
                 <div className="relative">
 
