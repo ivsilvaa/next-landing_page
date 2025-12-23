@@ -1,5 +1,6 @@
 import { WhatsappLogo } from '@phosphor-icons/react/dist/ssr'
 import dogImage from '../../public/images/hero-dog.webp'
+import catImage from '../../public/images/cat-hero.png'
 import Image from 'next/image'
 
 export function Hero() {
@@ -24,7 +25,14 @@ export function Hero() {
                             Contato via WhatsApp</a>
 
                         <div className="mt-8">
-                            <p className="text-sm mb-4"><b className="bg-black text-white px-2 py-0.5 rounded-md">5%</b> de desconto na primeira compra.</p>
+                            <p className="text-sm mb-4"><b className="bg-black text-white px-2 py-0.5 rounded-md">5%</b>
+                                de desconto na primeira compra.</p>
+
+                            <div className='flex mt-4'>
+                                <div className='w-32 hidden lg:block'>
+                                    <Image src={catImage} alt='Foto pequena do gato' quality={100} className='object-fill' />
+                                </div>
+                            </div>
                         </div>
                     </div>
 
