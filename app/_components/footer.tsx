@@ -4,7 +4,7 @@ import primier from '../../public/images/primier.png'
 import whiskas from '../../public/images/whiskas.png'
 import natural from '../../public/images/natural.png'
 import Image from 'next/image'
-import { WhatsappLogo, FacebookLogo, InstagramLogo, YoutubeLogo } from '@phosphor-icons/react/dist/ssr'
+import { WhatsappLogo, FacebookLogo, InstagramLogo, TwitterLogo } from '@phosphor-icons/react/dist/ssr'
 
 const brands = [
     { name: "Royal Canin", logo: royal },
@@ -47,7 +47,7 @@ export function Footer() {
                 <div>
                     <footer className='grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12 mt-5'>
                         <div>
-                            <h3>Pet Shop Dev</h3>
+                            <h3 className='text-2xl font-semibold mb-2'>Pet Shop Dev</h3>
                             <p className='mb-4'>Cuidando do seu amigo com amor e dedicação.</p>
                             <a
                                 href="#"
@@ -55,8 +55,45 @@ export function Footer() {
                             w-fit gap-2 hover:scale-105 duration-300">
                                 <WhatsappLogo className="w-5 h-5" />
 
-                                Contato via WhatsApp</a>
+                                Contato via WhatsApp
+                            </a>
                         </div>
+
+                        <div>
+                            <h3 className='text-2xl font-semibold mb-2'>Contato</h3>
+                            <p>Rua dos Pets, 123</p>
+                            <p>Cidade, Estado - CEP: 12345-678</p>
+                            <p>Tel. (51) 99999-9999</p>
+                            <p>E-mail: contato@petshop.com </p>
+                        </div>
+
+                        <div>
+                            <h3 className='text-2xl font-semibold mb-2'>Redes Sociais</h3>
+                            <div className='flex gap-4'>
+                                <a
+                                    href="#"
+                                    target='_blank'
+                                    className="flex items-center justify-center w-fit gap-2 hover:scale-120 duration-300">
+                                    <FacebookLogo className="w-8 h-8" />
+                                </a>
+
+                                <a
+                                    href="#"
+                                    target='_blank'
+                                    className="flex items-center justify-center w-fit gap-2 hover:scale-120 duration-300">
+                                    <InstagramLogo className="w-8 h-8" />
+                                </a>
+
+                                <a
+                                    href="#"
+                                    target='_blank'
+                                    className="flex items-center justify-center w-fit gap-2 hover:scale-120 duration-300">
+                                    <TwitterLogo className="w-8 h-8" />
+                                </a>
+                            </div>
+                        </div>
+
+
                     </footer>
                 </div>
 
