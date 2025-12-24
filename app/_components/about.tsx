@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import about1Image from '../../public/images/about-1.png'
-import about2Image from '../../public/images/about-2.png'
+import about1Image from '../../public/about-1.png'
+import about2Image from '../../public/about-2.png'
 import { WhatsappLogo } from '@phosphor-icons/react/dist/ssr'
 import { Check, MapPin } from 'lucide-react'
 

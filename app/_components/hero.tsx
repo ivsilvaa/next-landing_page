@@ -1,6 +1,6 @@
 import { WhatsappLogo } from '@phosphor-icons/react/dist/ssr'
-import dogImage from '../../public/images/hero-dog.webp'
-import catImage from '../../public/images/cat-hero.png'
+import dogImage from '../../public/hero-dog.webp'
+import catImage from '../../public/cat-hero.png'
 import Image from 'next/image'
 
 export function Hero() {

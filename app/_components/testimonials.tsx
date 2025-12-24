@@ -3,9 +3,9 @@
 import useEmblaCarousel from 'embla-carousel-react'
 import { ChevronLeft, ChevronRight, Scissors, Syringe, CarTaxiFront, Hotel, Clock } from 'lucide-react'
 import { WhatsappLogo } from '@phosphor-icons/react'
-import tutor1 from '../../public/images/tutor1.png'
-import tutor2 from '../../public/images/tutor2.jpg'
-import tutor3 from '../../public/images/tutor3.jpg'
+import tutor1 from '../../public/tutor1.png'
+import tutor2 from '../../public/tutor2.jpg'
+import tutor3 from '../../public/tutor3.jpg'
 import Image from 'next/image'
 
 const testimonials = [
