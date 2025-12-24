@@ -52,7 +52,8 @@ export function Testimonials() {
 
                 <h2 className="text-4xl font-bold mb-12 text-center">O que dizem nossos clientes sobre nós</h2>
 
-                <div className="relative max-w-4xl mx-auto">
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                    className="relative max-w-4xl mx-auto">
 
                     <div className='overflow-hidden' ref={emblaRef}>
                         <div className='flex'>

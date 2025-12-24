@@ -64,7 +64,7 @@ export function Services() {
 
                 <h2 className="text-4xl font-bold mb-12">Nossos serviços</h2>
 
-                <div className="relative">
+                <div className="relative" data-aos="flip-up">
 
                     <div className='overflow-hidden' ref={emblaRef}>
                         <div className='flex'>

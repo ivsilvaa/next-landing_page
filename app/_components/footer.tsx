@@ -23,7 +23,7 @@ export function Footer() {
                 <div className='border-b border-white/20 pb-8'>
                     <h4 className='text-3xl font-semibold mb-8 text-center'>Marcas que trabalhamos</h4>
 
-                    <div className='grid grid-cols-2 lg:grid-cols-6 gap-8'>
+                    <div data-aos="fade-up" className='grid grid-cols-2 lg:grid-cols-6 gap-8'>
                         {brands.map((item, index) => (
                             <div key={index} className='bg-white rounded-lg p-4 flex items-center justify-center'>
                                 <Image
@@ -46,7 +46,7 @@ export function Footer() {
 
                 <div>
                     <footer className='grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12 mt-5'>
-                        <div>
+                        <div data-aos="fade-up-right">
                             <h3 className='text-2xl font-semibold mb-2'>Pet Shop Dev</h3>
                             <p className='mb-4'>Cuidando do seu amigo com amor e dedicação.</p>
                             <a
@@ -59,7 +59,7 @@ export function Footer() {
                             </a>
                         </div>
 
-                        <div>
+                        <div data-aos="fade-down">
                             <h3 className='text-2xl font-semibold mb-2'>Contato</h3>
                             <p>Rua dos Pets, 123</p>
                             <p>Cidade, Estado - CEP: 12345-678</p>
@@ -67,7 +67,7 @@ export function Footer() {
                             <p>E-mail: contato@petshop.com </p>
                         </div>
 
-                        <div>
+                        <div data-aos="fade-up-left">
                             <h3 className='text-2xl font-semibold mb-2'>Redes Sociais</h3>
                             <div className='flex gap-4'>
                                 <a
@@ -93,10 +93,13 @@ export function Footer() {
                             </div>
                         </div>
 
-
                     </footer>
+                    <div className='border-t border-white/20 pt-4'>
+                        <p className='text-center text-sm opacity-80'>
+                            © 2025 Pet Shop · Todos os direitos reservados.
+                        </p>
+                    </div>
                 </div>
-
             </div>
         </section>
 
