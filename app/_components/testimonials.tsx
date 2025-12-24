@@ -93,7 +93,7 @@ export function Testimonials() {
                     <button
                         onClick={scrollPrev}
                         className='bg-gray-300 flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute left-3 -translate-y-1/2
-                        -translate-x-1/2 top-1/2 z-10'>
+                        -translate-x-1/2 top-1/2 z-10 cursor-pointer'>
                         <ChevronLeft
 
                             className='w-6 h-6 text-[#1e293b]'
@@ -103,7 +103,7 @@ export function Testimonials() {
                     <button
                         onClick={scrollNext}
                         className='bg-gray-300 flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute -right-7 -translate-y-1/2
-                        -translate-x-1/2 top-1/2 z-10'>
+                        -translate-x-1/2 top-1/2 z-10 cursor-pointer'>
                         <ChevronRight
 
                             className='w-6 h-6 text-[#1e293b]'

@@ -32,8 +32,7 @@ export function Hero() {
                             Contato via WhatsApp</a>
 
                         <div data-aos='fade-left' className="mt-8">
-                            <p className="text-sm mb-4"><b className="bg-black text-white px-2 py-0.5 rounded-md">5%</b>
-                                de desconto na primeira compra.</p>
+                            <p className="text-sm mb-4"><b className="bg-black text-white px-2 py-0.5 rounded-md">5%</b> de desconto na primeira compra.</p>
 
                             <div className='flex mt-4'>
                                 <div className='w-32 hidden lg:block'>
