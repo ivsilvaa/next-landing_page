@@ -1,43 +1,34 @@
-'use client'
+"use client"
 
 import useEmblaCarousel from 'embla-carousel-react'
 import { ChevronLeft, ChevronRight, Scissors, Syringe, CarTaxiFront, Hotel, Clock } from 'lucide-react'
-import { WhatsappLogo, WhatsappLogoIcon } from '@phosphor-icons/react'
+import { WhatsappLogo } from '@phosphor-icons/react'
+import tutor1 from '../../public/images/tutor1.png'
+import Image from 'next/image'
 
-const services = [
+const testimonials = [
     {
-        title: "Banho & Tosa",
-        description: "Inclui banho com produtos específicos para o tipo de pelagem e pele do animal, corte de unhas, limpeza das orelhas e tosa personalizada (higiênica ou estilizada).",
-        duration: "1h",
-        price: "$50",
-        icon: <Scissors />,
-        linkText: 'Olá, vi no site sobre Banho e tosa e gostaria de mais informações.'
+        content:
+            "Desde que comecei a levar a Luna para banho e tosa aqui, ela nunca esteve tão feliz! O atendimento é impecável, os profissionais são super cuidadosos e sempre deixam minha peluda linda e cheirosa. Recomendo de olhos fechados!",
+        author: "Mariana Souza",
+        role: "Tutora da Luna (Golden Retriever)",
+        image: tutor1,
     },
     {
-        title: "Consulta Veterinária",
-        description: "Oferece atendimento clínico básico ou especializado para cuidar da saúde do animal. Inclui diagnóstico de doenças, aplicação de vacinas obrigatórias.",
-        duration: "1h",
-        price: "$45",
-        icon: <Syringe />,
-        linkText: 'Olá, vi no site sobre Consulta veterinária e gostaria de mais informações.'
+        content:
+            "O serviço de hotel para pets foi uma experiência incrível! Precisei viajar e fiquei tranquilo sabendo que o Thor estava sendo bem cuidado. Recebi fotos e atualizações diárias, e ele voltou para casa super feliz! Sem dúvida, o melhor petshop da região.",
+        author: "Rafael",
+        role: "Tutor do Thor (Bulldog Francês)",
+        image: tutor1,
     },
     {
-        title: "Táxi Pet",
-        description: "Serviço de transporte para levar e buscar os pets no petshop, clínicas veterinárias ou outros locais. Ideal para tutores que não têm tempo ou transporte adequado para locomover os animais.",
-        duration: "2h",
-        price: "$80",
-        icon: <CarTaxiFront />,
-        linkText: 'Olá, vi no site sobre Táxi Pet e gostaria de mais informações.'
-    },
-    {
-        title: "Hotel para pets",
-        description: "Serviço de hospedagem para animais de estimação, ideal para quando os tutores precisam viajar ou se ausentar por alguns dias. Os pets ficam acomodados em espaços seguros, confortáveis.",
-        duration: "1h",
-        price: "$60",
-        icon: <Hotel />,
-        linkText: 'Olá, vi no site sobre Hotel para pets e gostaria de mais informações.'
+        content: "Meus gatos nunca gostaram de sair de casa, mas o atendimento nesse petshop fez toda a diferença. A equipe é muito paciente e cuidadosa, e o serviço de banho especializado para felinos foi maravilhoso! Agora sei onde confiar o cuidado deles.",
+        author: "Camila fernandes",
+        role: "Tutora da Mel e do Max",
+        image: tutor1,
     },
 ]
+
 
 export function Testimonials() {
 
@@ -59,40 +50,30 @@ export function Testimonials() {
 
                 <h2 className="text-4xl font-bold mb-12 text-center">O que dizem nossos clientes sobre nós</h2>
 
-                <div className="relative">
+                <div className="relative max-w-4xl mx-auto">
 
                     <div className='overflow-hidden' ref={emblaRef}>
                         <div className='flex'>
-                            {services.map((item, index) => (
-                                <div key={index} className='flex-[0_0_100%] min-w-0 md:flex-[0_0_calc(100%/3)] px-3'>
+                            {testimonials.map((item, index) => (
+                                <div key={index} className='flex-[0_0_100%] min-w-0 px-3'>
                                     <article className='bg-[#1e293b] text-white rounded-2xl p-6 space-y-4 h-full 
                                     flex flex-col'>
-                                        <div className='flex-1 flex items-start justify-between'>
-
-                                            <div className='flex gap-3'>
-                                                <span className='text-3xl'>{item.icon}</span>
-                                                <div>
-                                                    <h3 className='font-bold text-xl my-2'>{item.title}</h3>
-                                                    <p className='text-gray-400 text-sm select-none'>{item.description}</p>
-                                                </div>
+                                        <div className='flex flex-col items-center text-cneter space-y-4'>
+                                            <div className='relative w-24 h-24'>
+                                                <Image
+                                                    src={item.image}
+                                                    alt={item.author}
+                                                    fill
+                                                    sizes='96px'
+                                                    className='object-cover rounded-full'
+                                                />
                                             </div>
+
+                                            <p></p>
+
                                         </div>
 
 
-                                        <div className='border-t border-gray-600 pt-4 flex items-center justify-between'>
-                                            <div className='flex items-center gap-2 text-sm'>
-                                                <Clock className='w-4 h-4' />
-                                                <span>{item.duration}</span>
-                                            </div>
-
-                                            <div>
-                                                <a href="#"
-                                                    className='flex items-center justify-center gap-2 hover:scale-105 duration-300'>
-                                                    <WhatsappLogo className='w-5 h-5' />
-                                                    Entrar em contato
-                                                </a>
-                                            </div>
-                                        </div>
 
                                     </article>
                                 </div>
